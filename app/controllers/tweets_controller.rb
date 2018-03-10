@@ -1,15 +1,7 @@
 class TweetsController < ApplicationController
-  def new
-    @tweet = Tweet.new
+    def search
+      respond_to do |format|
+        format.html # show.html.erb
+      end
+    end
   end
-
-  def create
-    Tweet.create(create_params)
-    redirect_to :root
-  end
-
-  private
-  def create_params
-    params.require(:tweet).permit(:text, :image)
-  end
-end
