@@ -9,3 +9,6 @@ class Tweet
     @contents = contents
   end
 end
+
+class Img
+end
