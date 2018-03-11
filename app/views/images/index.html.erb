@@ -1,2 +1,8 @@
-<h1>Images#index</h1>
-<p>Find me in app/views/images/index.html.erb</p>
+<% word = "サビ猫"+" exclude:retweets" %>
+<% @client.search(word, :result_type => "recent", :include_entities => true).each do |tweet| %>
+    <% tweet.media.each do |media| %>
+
+
+        <%= image_tag(media.media_url,:size => "128x128") %>
+    <% end %>
+<% end %>
