@@ -3,11 +3,11 @@ class ImagesController < ApplicationController
     require 'twitter'
 
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key         = "sznhA6doIXhXzj6yEtMJcMnpA"
-      config.consumer_secret      = "8v4RXZDYd3J5DyqduU3WbUh16a3cKt6Kr7qcg2DnpZ176yyLbC"
+      config.consumer_key         = ""
+      config.consumer_secret      = ""
     end
 
-    word = "サビ猫" + " exclude:retweets"
+    word = "シャム猫" + " exclude:retweets"
     count = 0
     @client.search(word, :result_type => "recent", :include_entities => true).each do |tweet|
     tweet.media.each do |media|
