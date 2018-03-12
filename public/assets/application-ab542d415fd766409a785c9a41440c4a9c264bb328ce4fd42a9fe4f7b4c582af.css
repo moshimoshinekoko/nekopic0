@@ -1,0 +1,60 @@
+/* line 7, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/custom.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/custom.scss */
+#grid {
+  width: 900px;
+}
+
+/* line 15, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/custom.scss */
+li {
+  margin: 5px;
+  float: left;
+  list-style: none;
+}
+/* line 5, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/users.scss */
+form-control {
+  height: 45px;
+}
+
+/* line 9, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/users.scss */
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/C:/Users/tadokoromidzuho/Downloads/p0026_m.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+/* line 19, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/users.scss */
+.users-new-wrapper .users-new-container {
+  padding-top: 220px;
+}
+/* line 22, /Users/tadokoromidzuho/nekopict/app/assets/stylesheets/users.scss */
+.users-new-wrapper .users-new-container .form-group {
+  margin-bottom: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ @import 'custom';
+ @import "bootstrap-sprockets";
+ @import "bootstrap";

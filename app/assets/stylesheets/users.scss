@@ -1,23 +1,6 @@
-// Place all the styles related to the tweets controller here.
+// Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-#grid {
-	width: 900px;
-}
-li {
-	margin: 5px;
-	float: left;
-	list-style: none;
-}
-
 
 form-control {
   height: 45px;
@@ -28,7 +11,7 @@ form-control {
   height: 100vh;
   background-image: image-url('file:///C:/Users/tadokoromidzuho/Downloads/p0026_m.jpeg');
   background-position: center center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;

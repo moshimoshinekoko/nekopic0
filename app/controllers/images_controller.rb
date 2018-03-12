@@ -3,8 +3,8 @@ class ImagesController < ApplicationController
     require 'twitter'
 
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key         = ""
-      config.consumer_secret      = ""
+      config.consumer_key         = "sznhA6doIXhXzj6yEtMJcMnpA"
+      config.consumer_secret      = "8v4RXZDYd3J5DyqduU3WbUh16a3cKt6Kr7qcg2DnpZ176yyLbC"
     end
 
     word = "シャム猫" + " exclude:retweets"
