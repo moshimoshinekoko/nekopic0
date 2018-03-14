@@ -8,9 +8,8 @@ class TweetsController < ApplicationController
     require 'fastimage'
 
     client = Twitter::REST::Client.new do |config|
-      config.consumer_key         = "sznhA6doIXhXzj6yEtMJcMnpA"
-      config.consumer_secret      = "8v4RXZDYd3J5DyqduU3WbUh16a3cKt6Kr7qcg2DnpZ176yyLbC"
-    end
+      config.consumer_key         = Rails.application.secrets.consumerkey
+      config.consumer_secret      = Rails.application.secrets.consumer_secret
 
     word = "猫" + " exclude:retweets"
     count = 0

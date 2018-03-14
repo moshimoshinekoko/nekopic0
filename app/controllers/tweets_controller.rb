@@ -10,9 +10,8 @@ class TweetsController < ApplicationController
     client = Twitter::REST::Client.new do |config|
       # 事前準備で取得したキーのセット
 
-      config.consumer_key         = "sznhA6doIXhXzj6yEtMJcMnpA"
-      config.consumer_secret      = "8v4RXZDYd3J5DyqduU3WbUh16a3cKt6Kr7qcg2DnpZ176yyLbC"
-    end
+      config.consumer_key         = Rails.application.secrets.consumerkey
+      config.consumer_secret      = Rails.application.secrets.consumer_secret
 
 
 
