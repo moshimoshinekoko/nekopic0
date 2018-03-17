@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # masterが怒ってくれるコメント
   get 'users/new'
 
   get 'cats/search'
